@@ -6,7 +6,7 @@ public class Main {
     public static void answer_output(double[][] ar, int len_a, int len_x) {
         for (int i = 0; i < len_a; i++) {
             for (int j = 0; j < len_x; j++) {
-                System.out.print(String.format("%.5f", ar[i][j]) + "\t");
+                System.out.printf("%.5f   ", ar[i][j]);
             }
             System.out.println();
         }
