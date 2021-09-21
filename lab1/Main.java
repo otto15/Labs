@@ -1,5 +1,3 @@
-package lab1;
-
 import java.lang.Math;
 
 public class Main {
@@ -15,18 +13,18 @@ public class Main {
     }
 
     // генерирует случайное число в диапазоне от -4.0 до 7.0
-    public static double random_float() {
-        return (Math.random() * (7.0f - (-4.0f))) + (-4.0f);
+    public static double random_double() {
+        return (Math.random() * (7.0 - (-4.0))) + (-4.0);
     }
 
     // вычисляет элемент двумерного массива по формуле из 1 условия
     public static double fst_condition(double num) {
-        return Math.pow((Math.pow(Math.log(Math.abs(num)), num - 1)), Math.cos(Math.sin(num)) / 2d);
+        return Math.pow((Math.pow(Math.log(Math.abs(num)), num - 1)), Math.cos(Math.sin(num)) / 2.0);
     }
 
     // вычисляет элемент двумерного массива по формуле из 2 условия
     public static double snd_condition(double num) {
-        return Math.pow((1 / 2d) / (1 - Math.cos(Math.cbrt(num))), Math.pow(Math.pow(Math.E, num) + 1, 3));
+        return Math.pow((1 / 2.0) / (1 - Math.cos(Math.cbrt(num))), Math.pow(Math.pow(Math.E, num) + 1, 3));
     }
 
     // вычисляет элемент двумерного массива по формуле из 3 условия
@@ -42,7 +40,7 @@ public class Main {
             a[i] = num;
         }
         for (int i = 0; i < 12; i++) {
-            x[i] = random_float();
+            x[i] = random_double();
         }
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < x.length; j++) {
@@ -58,4 +56,3 @@ public class Main {
         answer_output(b, a.length, x.length);
     }
 }
-
