@@ -24,7 +24,7 @@ public class Main {
 
     // вычисляет элемент двумерного массива по формуле из 2 условия
     public static double snd_condition(double num) {
-        return Math.pow((1 / 2.0) / (1 - Math.cos(Math.cbrt(num))), Math.pow(Math.pow(Math.E, num) + 1, 3));
+        return Math.pow((0.5) / (1 - Math.cos(Math.cbrt(num))), Math.pow(Math.pow(Math.E, num) + 1, 3));
     }
 
     // вычисляет элемент двумерного массива по формуле из 3 условия
