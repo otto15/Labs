@@ -14,7 +14,6 @@ public class FuryAttack extends PhysicalMove {
                 break;
             }
         }
-        System.out.println(this.hits);
     }
 
     @Override
