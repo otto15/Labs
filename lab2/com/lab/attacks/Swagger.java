@@ -1,0 +1,21 @@
+package com.lab.attacks;
+
+import ru.ifmo.se.pokemon.*;
+
+public class Swagger extends StatusMove {
+    public Swagger() {
+        super(Type.NORMAL, 0, 85);
+    }
+
+    @Override
+    public String describe() {
+        return "use Swagger";
+    }
+
+    @Override
+    protected void applyOppEffects(Pokemon def) {
+        def.setMod(Stat.ATTACK, 2);
+        def.confuse();
+    }
+}
+
