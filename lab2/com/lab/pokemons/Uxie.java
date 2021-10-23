@@ -8,9 +8,6 @@ public class Uxie extends Pokemon {
         super(name, level);
         setType(Type.PSYCHIC);
         setStats(75, 75, 130, 75, 130, 95);
-        addMove(new WoodHammer());
-        addMove(new Harden());
-        addMove(new RockPolish());
-        addMove(new StoneEdge());
+        setMove(new WoodHammer(), new Harden(), new RockPolish(), new StoneEdge());
     }
 }
